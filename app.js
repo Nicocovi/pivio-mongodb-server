@@ -24,16 +24,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-//passport
-var passport = require('passport');
-var jwtConfig = require('./passport/jwtConfig');
-app.use(passport.initialize());
-jwtConfig(passport);
-/**
- * routing
- */
-var userRoutes = require("./user/userRoutes");
 
-app.use('/api/user', userRoutes(passport));
+var applicationRoutes = require("./application/applicationRoutes");
+
+app.use('/api/application', applicationRoutes());
 
 module.exports = app;

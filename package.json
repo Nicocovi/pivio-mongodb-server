@@ -1,26 +1,11 @@
 {
-    "name": "moviebass",
+    "name": "Mongodb-pivio",
     "version": "1.0.0",
-    "description": "Movie backend as a service",
+    "description": "Mongodb for pivio",
     "main": "server.js",
     "scripts": {
         "start": "node server.js"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://bitbucket.org/sebischair/sebamaster-movie-backend"
-    },
-    "keywords": [
-        "movie-backend",
-        "seba",
-        "master"
-    ],
-    "author": "sebis",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://bitbucket.org/sebischair/sebamaster-movie-backend"
-    },
-    "homepage": "https://bitbucket.org/sebischair/sebamaster-movie-backend#readme",
     "dependencies": {
         "bcrypt-nodejs": "0.0.3",
         "body-parser": "^1.15.0",
